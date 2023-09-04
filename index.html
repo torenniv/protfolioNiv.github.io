@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niv Toren's Protfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dd9d1bd4c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="header">
+    <div class="container">
+        <nav>
+          <img src="Images/logo.png" class="logo">
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#protfolio">Protfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="closemenu()" style="color: #eeff00;"></i>
+          </ul>
+          
+          <i class="fas fa-bars" onclick="openmenu()" style="color: #eeff00;"></i>
+          
+        </nav>
+        <div class="header-text">
+          <p>Electrical Engineering student </p>
+          <h1>Hello there! My name is <br><span>Niv</span> and welcome to my <br>protfilio</h1>
+        </div>
+    </div>
+  </div>
+  <!------------about------------>
+  
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="Images/about_me.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About me</h1>
+          <p>
+            My name is Niv Toren, I'm 23 from Petah Tiqva and I'm studing Electrical Engineering in Shenkar collage. I'm also work full time job as helpdesk and IT in Maman group.
+            Welcome to my protfilio!
+          </p>
+          <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+          <p class="tab-links" onclick="opentab('experience')"  >Experience</p>
+          <p class="tab-links" onclick="opentab('education')" >Education</p>
+          
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>IT and helpdesk guy</span><br>Good technical sense and extensitive knowledge of computering and networks. </li>
+              <li><span>C/C++ and Arduino Develop</span><br>Academic course was taught and project about arduino was completed. </li>
+              <li><span>Persuasive and sales skills</span><br>Has more than two years of experience in technological sales. </li>
+            </ul>
+          </div>
+             <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2022-Now</span><br>IT and helpdesk guy in Maman group. </li>
+              <li><span>2021-2022</span><br>Sales and technical master in Suny-Samsung communication. </li>
+              <li><span>2020-2021</span><br>Sales and technical master in Pelephone. </li>
+              <li><span>2018-2020</span><br>Technical electronics warrior in ICT corps in IDF. </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-now</span><br>Electrical Engineering student with grade point average of 90.</li>
+              <li><span>2014-2017</span><br>Ben-Gurion high-school.  </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+<!----services----->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code" style="color: #fae500;"></i>
+        <h2>Web Development</h2>
+        <p>Web development courses</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-microchip" style="color: #fae500;"></i>
+        <h2>C, C++ and Arduino develop</h2>
+        <p>Academic courses was taken</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <i class="fa-solid fa-terminal" style="color: #fae500;"></i>
+        <h2>Technical support and services </h2>
+        <p>Supports and repairs computing devices</p>
+        <a href="#">Learn more</a>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!----------------protfolio-------------->
+<div id="protfolio">
+  <div class="container">
+    <h1 class="sub-title">My Works</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="Images/project.png">
+        <div class="layer">
+          <h3>Distance meter for cars</h3>
+          <p>Distance meter arduino project has written in C++ language.</p>
+          <a href="Images/arduino project.pdf"><i class="fa-solid fa-paperclip" style="color: #deed07;"></i></a>
+         </div>
+      </div>
+      <div class="work">
+        <img src="Images/wordle.png">
+        <div class="layer">
+          <h3>Wordle game</h3>
+          <p>The next project on the subject of the Word game that deals with assembling words after guessing a few letters<br> Written in C.</p>
+          <a href="Images/cpp project.pdf"><i class="fa-solid fa-paperclip" style="color: #deed07;"></i></a>
+      </div>
+    </div>
+  </div>
+  <a href="#" class="btn">See more</a>
+</div>
+
+<!-----contact-------->
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fa-regular fa-paper-plane"></i> torenniv@gmail.com</p>
+      <p><i class="fa-solid fa-phone"></i> 0558821022</p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/torenniv/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/niv.toren/"><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <a href="Images/Hebrew_cv.docx" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet" >
+          
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your mail" required>
+          <textarea name="Messege"  rows="6" placeholder="Your Messege"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright <i class="fa-solid fa-tower-broadcast"></i> Niv Toren</p>
+  </div>
+</div>
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname){
+  for (tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+ event.currentTarget.classList.add("active-link");
+ document.getElementById(tabname).classList.add("active-tab");
+}
+</script>
+<script>
+
+var sidemenu=document.getElementById("sidemenu");
+
+function openmenu(){
+  sidemenu.style.right="0";
+
+}
+function closemenu(){
+  sidemenu.style.right="-200px";
+  
+}
+
+</script>
+
+<script>
+  const scriptURL = '<https://script.google.com/macros/s/AKfycbwHBiLpfVvyz1hoy0-3XF_GKxKf_HwfSmWopguBrtMKiUKEv3RqAwYIlK3f-y0Or516/exec>'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Messege sent successfully!"
+        setTimeout(function(){
+          msg.innerHTML = ""
+
+        }, 5000)
+        form.reset()
+
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
