@@ -339,7 +339,7 @@ form .btn2{
 /*------css for small screens-------*/
 
 nav .fas{
-    display:'';
+    display:'none';
 }
 
 
