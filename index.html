@@ -41,7 +41,7 @@
         <div class="about-col-2">
           <h1 class="sub-title">About me</h1>
           <p>
-            My name is Niv Toren, I'm 23 from Petah Tiqva and I'm studing Electrical Engineering in Shenkar collage. I'm also work full time job as helpdesk and IT in Maman group.
+            My name is Niv Toren, I'm 24 from Petah Tiqva and I'm studing Electrical Engineering in Shenkar collage. I'm also work full time job as helpdesk and IT in Maman group.
             Welcome to my protfilio!
           </p>
           <div class="tab-titles">
@@ -52,9 +52,13 @@
           </div>
           <div class="tab-contents active-tab" id="skills">
             <ul>
-              <li><span>IT and helpdesk guy</span><br>Good technical sense and extensitive knowledge of computering and networks. </li>
-              <li><span>C/C++ and Arduino Develop</span><br>Academic course was taught and project about arduino was completed. </li>
+              <li><span>IT and helpdesk guy</span><br>Good technical sense and extensive knowledge of computing and networks. </li>
+              <li><span>C/C++ and Arduino Development</span><br>Academic course was taught and project about Arduino was completed. </li>
               <li><span>Persuasive and sales skills</span><br>Has more than two years of experience in technological sales. </li>
+              <li><span>Python and Raspberry Pi</span><br>Completed a course in Python programming and Raspberry Pi, gaining hands-on experience in developing projects. </li>
+              <li><span>SolidWorks</span><br>Proficient in SolidWorks, gained through coursework and practical assignments. </li>
+              <li><span>Advanced Electrical Engineering Courses</span><br>Completed advanced courses in Electrical Engineering, enhancing knowledge in the field.</li>
+              
             </ul>
           </div>
              <div class="tab-contents" id="experience">
@@ -67,7 +71,7 @@
           </div>
           <div class="tab-contents" id="education">
             <ul>
-              <li><span>2022-now</span><br>Electrical Engineering student with grade point average of 90.</li>
+              <li><span>2022-now</span><br>Electrical Engineering student.</li>
               <li><span>2014-2017</span><br>Ben-Gurion high-school.  </li>
             </ul>
           </div>
@@ -89,7 +93,7 @@
       </div>
       <div>
         <i class="fa-solid fa-microchip" style="color: #fae500;"></i>
-        <h2>C, C++ and Arduino develop</h2>
+        <h2>C, C++ , Python, Raspberry pi Develop and Arduino develop</h2>
         <p>Academic courses was taken</p>
         <a href="#">Learn more</a>
       </div>
@@ -140,7 +144,7 @@
       <div class="social-icons">
         <a href="https://www.facebook.com/torenniv/"><i class="fa-brands fa-facebook"></i></a>
         <a href="https://www.instagram.com/niv.toren/"><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.linkedin.com/in/torenniv"><i class="fa-brands fa-linkedin"></i></a>
       </div>
       <a href="img/Hebrew_cv.docx" download class="btn btn2">Download CV</a>
       </div>
@@ -193,7 +197,7 @@ function closemenu(){
 </script>
 
 <script>
-  const scriptURL = '<https://script.google.com/macros/s/AKfycbwHBiLpfVvyz1hoy0-3XF_GKxKf_HwfSmWopguBrtMKiUKEv3RqAwYIlK3f-y0Or516/exec>'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyiRlUl9vePIJ0cFPjdXEyIflvG0Sn00G3EoKgEY3O7kbd4HlHV48o1zR5Lw4Bs-kXf/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
 
@@ -201,7 +205,7 @@ function closemenu(){
     e.preventDefault()
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => {
-        msg.innerHTML = "Messege sent successfully!"
+        msg.innerHTML = "Message sent successfully!"
         setTimeout(function(){
           msg.innerHTML = ""
 
